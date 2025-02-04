@@ -9,10 +9,7 @@ class StorageService extends GetxService {
   static const _tokenKey = 'auth_token';
   static const _onboardingKey = 'onboarding_complete';
 
-  Future<StorageService> init() async {
-    await GetStorage.init();
-    return this;
-  }
+  
 
   Future<void> saveToken(String token) async {
     try {
